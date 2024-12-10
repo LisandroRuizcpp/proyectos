@@ -1,0 +1,137 @@
+/* Estilo base para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center; /* Centrar el contenido en la página */
+    position: relative; /* Necesario para que los elementos dentro de la página se ajusten correctamente */
+}
+
+/* Estilo para los títulos principales */
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Contenedor principal para el contenido */
+#content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1000px; /* Ampliar el ancho máximo */
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible hasta ese límite */
+    box-sizing: border-box; /* Incluir padding dentro del ancho máximo */
+    overflow-y: auto;
+    margin-left: 20%; /* Deja espacio para el menú lateral */
+}
+
+/* Menú lateral fijo */
+#menu {
+    width: 20%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: fixed; /* Fija la barra lateral */
+    top: 0; /* Colócalo en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    height: 100vh; /* Asegura que la barra cubra toda la altura de la pantalla */
+    overflow-y: auto; /* Permite hacer scroll dentro del menú si es necesario */
+    border-right: 1px solid #ddd;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño del contenedor */
+    z-index: 10; /* Asegura que el menú esté por encima del contenido */
+}
+
+/* Estilo para los enlaces del menú */
+#section-menu li {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif; /* Cambiar la fuente */
+    font-size: 16px; /* Ajustar el tamaño de la fuente */
+}
+
+#section-menu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none; /* Eliminar subrayado */
+    color: #333; /* Color más oscuro para texto */
+    background-color: #e8e8e8; /* Fondo suave */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza el cambio de color */
+}
+
+#section-menu li a:hover {
+    background-color: #4CAF50; /* Fondo verde al pasar el ratón */
+    color: white; /* Cambiar texto a blanco al pasar el ratón */
+}
+
+/* Contenedor del documento */
+#doc-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Estilo para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las celdas de las tablas */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Alternancia de color en las filas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover sobre filas */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo del menú de navegación */
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 100%; /* Hace que la imagen no se desborde fuera del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita el espaciado inferior */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Agregar un contenedor general para el diseño */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Limitar el tamaño máximo del contenedor global */
+    margin: 0 auto; /* Centrar el contenido en la página */
+}
